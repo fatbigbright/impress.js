@@ -11,6 +11,70 @@
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
+         opacity: 0.95;
+      }
+      #storyRoute
+      {
+         text-align: center;
+         height: 150px;
+         width: 1024px;
+         font-size: 40px;
+         font-weight: 900;
+         background-image:url('pics/route2.jpg');
+         background-size: cover;
+         color: #ddeeff;
+      }
+      #storyRoute.present .deceptcons
+      {
+         -webkit-transform: rotate(-10deg);
+         -moz-transform:    rotate(-10deg);
+         -ms-transform:     rotate(-10deg);
+         -o-transform:      rotate(-10deg);
+         transform:         rotate(-10deg);
+
+         -webkit-transition-delay: 0.5s;
+         -moz-transition-delay:    0.5s;
+         -ms-transition-delay:     0.5s;
+         -o-transition-delay:      0.5s;
+         transition-delay:         0.5s;
+      }
+      #storyRoute.present .cybertron
+      {
+         -webkit-transform: scale(1.2);
+         -moz-transform:    scale(1.2);
+         -ms-transform:     scale(1.2);
+         -o-transform:      scale(1.2);
+         transform:         scale(1.2);
+
+         -webkit-transition-delay: 1s;
+         -moz-transition-delay:    1s;
+         -ms-transition-delay:     1s;
+         -o-transition-delay:      1s;
+         transition-delay:         1s;
+      }
+      #storyRoute.present .Earch
+      {
+         -webkit-transform: rotate(10deg);
+         -moz-transform:    rotate(10deg);
+         -ms-transform:     rotate(10deg);
+         -o-transform:      rotate(10deg);
+         transform:         rotate(10deg);
+
+         -webkit-transition-delay: 1.5s;
+         -moz-transition-delay:    1.5s;
+         -ms-transition-delay:     1.5s;
+         -o-transition-delay:      1.5s;
+         transition-delay:         1.5s;
+      }
+      #storyRoute b
+      {
+         display: inline-block;
+         /*动画的播放时长*/
+         -webkit-transition: 1.5s;
+         -moz-transition:    1.5s;
+         -ms-transition:     1.5s;
+         -o-transition:      1.5s;
+         transition:         1.5s;
       }
    </style>
 </head>
@@ -20,23 +84,44 @@
     <p>如果你想要获得更好的体验，请使用最新版的<b>Chrome</b>、<b>Safari</b>或<b>Firefox</b>浏览器查看这个页面。</p>
 </div>
 <div id="impress">
-    <div id="Title" class="step slide" data-x="0" data-y="0" >
-        <img src="pics/Logo_small.jpg" alt=""/>
+    <div id="Title" class="step slide" data-x="5000" data-y="1000" data-scale="5" >
+        <img src="pics/Logo-small.jpg" alt="" class="logo"/>
     </div>
-    <div id="slide1" class="step slide" data-x="1000" >
+    <div id="slide1" class="step slide" data-x="1200" data-rotate="720" >
         <p>永远的G1</p>
         <embed src="http://player.youku.com/player.php/sid/XNTY0NjM1MzIw/v.swf" allowFullScreen="true" quality="high" width="800" height="600" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        <!-- <iframe height=498 width=510 src="http://player.youku.com/embed/XNTY0NjM1MzIw" frameborder=0 allowfullscreen></iframe> -->
     </div>
-    <div id="slide2" class="step slide" data-x="0" data-y="1000" data-rotate="90">
+    <div id="slide2" class="step slide" data-x="1200" data-y="1000" data-rotate="720">
         <p>The Movie</p>
     </div>
-    <div id="slide3" class="step slide" data-rotate-x="180" data-rotate-z="270" data-y="-1500">
-        玩具
+    <div id="storyRoute" class="step slide" data-x="1200" data-y="2000" data-rotate="360">   
+      <b class="deceptcons">狂派的崛起</b>&nbsp;&nbsp;&nbsp;----&gt;&nbsp;&nbsp;&nbsp;
+      <b class="cybertron">塞伯坦内战</b>&nbsp;&nbsp;&nbsp;----&gt;&nbsp;&nbsp;&nbsp;
+      <b class="Earch">转战地球</b>
     </div>
-    <div id="slide_last" class="step slide" data-y="900" data-scale="0.2">
+    <div id="slide3" class="step slide" data-x="2200" data-y="1000" data-rotate="720">
+        <h2>漫画</h2>
+        <div class="marvel">
+           <p>Marvel<br /><img src="pics/marvel01.jpg" alt="" class="comic-cover"/></p>
+        </div>
+        <div class="dw">
+           <p>Dreamware<br/><img src="pics/dw01.jpg" alt="" class="comic-cover"/></p>
+        </div>
+        <div class="idw">
+           <p>IDW<br /><img src="pics/idw01.jpg" alt="" class="comic-cover" /></p>
+        </div>
+    </div>
+    <div id="slide_last" class="step slide" data-x="2200" data-y="2000" data-scale="0.8" data-rotate="720">
       <img src="pics/1173166926.gif" alt="擎天柱" />
       <img src="pics/1173166945.gif" alt="威震天" />
     </div>
+    <div class="step slide" data-y="-800">
+        鸣谢<br/>
+        impress.js <br/>
+        www.tfg2.com
+    </div>
+    <div id="overview" class="step" data-x="4000" data-y="2000" data-scale="8"></div>
 </div>
 <div class="hint">
     <p>Powered by impress.js</p>

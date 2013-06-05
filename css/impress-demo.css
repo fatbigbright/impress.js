@@ -702,3 +702,36 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+.logo
+{
+   width: 800px;
+   height: 600px;
+}
+
+.marvel
+{
+   position: absolute;
+   top: 120px;
+   left: 60px;
+}
+
+.dw
+{
+   position: absolute;
+   top: 120px;
+   left: 325px;
+}
+
+.idw
+{
+   position: absolute;
+   top: 120px;
+   left: 590px;
+}
+
+.comic-cover
+{
+   width: 245px;
+   height: 375px;
+}
